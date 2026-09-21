@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>delavnica — YOLO webcam detection</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>delavnica <span class="sub">YOLO webcam detection on CPU</span></h1>
+    <div id="controls">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="stage">
+      <video id="video" autoplay muted playsinline></video>
+      <canvas id="overlay"></canvas>
+    </div>
+
+    <section id="statusPanel">
+      <div>Backend: <span id="backendText">checking…</span></div>
+      <div>Status: <span id="statusText">idle</span></div>
+      <div>Inference: <span id="latencyText">–</span></div>
+      <div>Processed FPS: <span id="fpsText">–</span></div>
+      <div>Detections: <span id="countText">–</span></div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

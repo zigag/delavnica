@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# YOLO model artifacts (downloaded/exported at runtime, not source)
+*.pt
+yolo11n_openvino_model/
+runs/
