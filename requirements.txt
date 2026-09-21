@@ -1,0 +1,16 @@
+# CPU-only YOLO demo dependencies.
+#
+# For a guaranteed CPU-only install, install torch first from the PyTorch
+# CPU index (skips multi-GB CUDA downloads):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.14
+torchvision>=0.29
+ultralytics>=8.4.157
+fastapi>=0.141
+uvicorn[standard]>=0.53
+python-multipart>=0.0.32
+Pillow>=12.0
+numpy>=2.1
+pytest>=9.0
+httpx>=0.28
+openvino>=2026.0
